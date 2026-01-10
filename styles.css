@@ -1,0 +1,29 @@
+/* Basic reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #111827; background: #f7f7f7; }
+
+/* Header and navigation */
+header { background: #0b1220; color: #ffffff; padding: 1rem 1.25rem; }
+nav { max-width: 1100px; margin: 0 auto; }
+nav ul { display: flex; gap: 0.5rem; list-style: none; margin: 0; padding: 0; justify-content: center; align-items: center; }
+nav a { color: #ffffff; text-decoration: none; padding: 0.55rem 0.9rem; border-radius: 6px; transition: background 150ms ease, transform 120ms ease; font-weight: 600; font-size: 0.95rem; }
+nav a:hover, nav a:focus { background: rgba(255,255,255,0.06); transform: translateY(-1px); }
+nav a:active { transform: translateY(0); }
+nav a:focus-visible { outline: 2px solid rgba(255,255,255,0.14); outline-offset: 2px; }
+
+header h1 { margin: 0; padding: 0.6rem 0 0; font-size: 1.5rem; font-weight: 700; text-align: center; }
+
+/* Responsive: stack nav on small screens */
+@media (max-width: 600px) {
+	nav ul { flex-direction: column; gap: 0; align-items: stretch; }
+	nav a { display: block; text-align: center; padding: 0.9rem 1rem; border-top: 1px solid rgba(255,255,255,0.04); }
+	header h1 { font-size: 1.25rem; margin-top: 0.5rem; }
+}
+
+/* Main/content spacing */
+main { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+section { background: #ffffff; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 1px 2px rgba(16,24,40,0.04); }
+
+/* Footer */
+footer { text-align: center; padding: 1rem; color: #64748b; font-size: 0.9rem; }
+
